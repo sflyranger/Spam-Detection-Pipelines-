@@ -1,6 +1,6 @@
 # **Spam Detection Model using Small Data Pipelines**
 
-This repository contains two Jupyter notebooks that demonstrate a structured approach to building and evaluating a spam detection model. The project addresses the challenges of working with imbalanced data, specifically focusing on detecting spam messages in a dataset with a significant class imbalance.
+This repository contains two python notebooks that demonstrate a structured approach to building and evaluating a spam detection model. The project addresses the challenges of working with imbalanced data, specifically focusing on detecting spam messages in a dataset with a significant class imbalance.
 
 ## Notebooks Overview
 
