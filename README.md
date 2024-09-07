@@ -1,28 +1,28 @@
-# **Spam Detection Model using Small Data Pipelines**
+# **Spam Detection Model: Tackling Imbalanced Data with Small Pipelines**
 
-This repository contains two python notebooks that demonstrate a structured approach to building and evaluating a spam detection model. The project addresses the challenges of working with imbalanced data, specifically focusing on detecting spam messages in a dataset with a significant class imbalance.
+This repo walks through how I built and evaluated a spam detection model, focusing on how to handle imbalanced data. It includes two Jupyter notebooks that break down the process into manageable steps, from initial data processing to selecting the final model.
 
 ## Notebooks Overview
 
 ### 1. **Spam Detection Model - Small Data Pipelines**
-This notebook outlines the creation of three separate pipelines, each addressing the issue of class imbalance in different ways. It includes:
-- Data sampling from the original dataset.
-- Preprocessing the text using **Spacy**.
-- Building an XGBoost classification model combined with **TFIDF** vectorization.
-- Hyperparameter tuning using **RandomizedSearchCV**.
-- Model evaluation based on **F1 score**, which is critical for imbalanced datasets.
+This notebook covers the creation of three pipelines, each tackling the challenge of imbalanced data a bit differently. Here’s what you'll see:
+- Sampling a portion of the dataset for quicker iterations.
+- Preprocessing text using **Spacy**.
+- Building an **XGBoost** classifier with **TFIDF** vectorization.
+- Tuning hyperparameters with **RandomizedSearchCV**.
+- Evaluating models using the **F1 score**, which is critical when working with class imbalance.
 
 ### 2. **Final Model Training**
-The second notebook focuses on training the best-performing model from the initial evaluation. This model is trained on a larger sample of the data and evaluated on unseen test data to ensure generalization. This notebook includes:
-- Further feature engineering.
-- Training the final model on a larger dataset.
-- Evaluating model performance using ROC-AUC and classification reports.
+In this notebook, I take the best-performing model from the first stage and train it on a larger data sample. The focus here is:
+- Applying more feature engineering.
+- Training the model on a larger dataset for generalization.
+- Evaluating model performance using ROC-AUC curves and classification reports.
 
 ## Key Features
-- **Data Preprocessing**: Includes handling missing values, tokenization, lemmatization, stopword removal, and feature extraction using **TFIDF Vectorizer**.
-- **Imbalanced Data Handling**: Various methods such as **SMOTE** and class weighting are employed to address the imbalance between ham and spam classes.
-- **Model Tuning**: Hyperparameter tuning is done using **RandomizedSearchCV** to find the best-performing model.
-- **Evaluation Metrics**: The model is evaluated using classification reports, **F1 score**, and **ROC-AUC** curves to provide a comprehensive analysis of its performance.
+- **Data Preprocessing**: Includes handling missing values, tokenization, lemmatization, stopword removal, and extracting features using **TFIDF**.
+- **Handling Imbalanced Data**: I used techniques like **SMOTE** and class weighting to make sure the model doesn’t overlook spam messages.
+- **Model Tuning**: Used **RandomizedSearchCV** to find the best model setup.
+- **Evaluation**: Assessed the model using classification reports, **F1 score**, and **ROC-AUC** curves to make sure it performs well.
 
 ## Results and Visualizations
 The final model performance is visualized using several plots and classification reports:
